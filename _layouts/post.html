@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class="articles-single container">
+<div class="articles-single">
 
 	<section class="articles-head">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h1>{{ page.title }}</h1>
-				<p class="articles-short">{{ page.short }}</p>
-				<!--<p class="articles-author">by {{ page.author }}</p>-->
+		<img src="/img/articles/magic.jpg" />
+		<div class="container">
+			<div class="row title-hover">
+				<div class="col-md-10 col-md-offset-1">
+					<h1>{{ page.title }}</h1>
+					<p class="articles-short">{{ page.short }}</p>
+					<!--<p class="articles-author">by {{ page.author }}</p>-->
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="article-body">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<p>{{ page.content }}</p>
+	<section class="articles-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<p>{{ page.content }}</p>
+				</div>
 			</div>
 		</div>
 	</section>
