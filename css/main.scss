@@ -8,14 +8,46 @@
   "bootstrap"
 ;
 
+// Serif
+@import url('https://fonts.googleapis.com/css?family=Average|Brawler|Lora');
+
+// Sans-serif
+@import url('https://fonts.googleapis.com/css?family=Heebo:300|Libre+Franklin|Open+Sans');
+
+// Handwriting
+@import url('https://fonts.googleapis.com/css?family=Meddon|Niconne');
 
 body {
-  color: #333;
-  font-size: 16px;
+	font-family: 'Lora', serif;
+	color: #333;
+	font-size: 16px;
+}
+
+h1, h2, h3,  {
+	font-family: 'Lora', sans-serif;
 }
 
 footer {
 	background-color: #efefef;
 	padding: 20px 0px 10px 0px;
 	font-size: 12px;
+}
+
+.articles-single {
+	.articles-head {
+		h1 {
+			font-family: 'Meddon';
+			margin-bottom:10px;
+		}
+		.articles-short {
+			font-family: 'Heebo', 'Open Sans', sans-serif;
+			font-size: 21px;
+			border-bottom: 1px solid #f5f5f5;
+			padding: 0px 0px 10px 0px;
+		}
+		.articles-author {
+			font-family: 'Libre Franklin', 'Open Sans', sans-serif;
+			font-size: 14px;
+		}
+	}
 }
