@@ -1,0 +1,21 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap"
+;
+
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+footer {
+	background-color: #efefef;
+	padding: 20px 0px 10px 0px;
+	font-size: 12px;
+}
