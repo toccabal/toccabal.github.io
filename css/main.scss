@@ -9,29 +9,40 @@
 ;
 
 // Serif
-@import url('https://fonts.googleapis.com/css?family=Average|Brawler|Lora');
+@import url('https://fonts.googleapis.com/css?family=Average|Brawler|Lora|PT+Serif');
 
 // Sans-serif
 @import url('https://fonts.googleapis.com/css?family=Heebo:300|Libre+Franklin|Open+Sans:300,600,700');
 
 // Handwriting
-@import url('https://fonts.googleapis.com/css?family=Meddon|Niconne');
+@import url('https://fonts.googleapis.com/css?family=Meddon');
+
+
+$rosegold: #b76e79;
 
 body {
-	font-family: 'Open Sans', serif;
-	font-weight: 100;
+	font-family: 'PT Serif', serif;
 	color: #333;
 	font-size: 16px;
 }
 
 h1, h2, h3,  {
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 footer {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
 	background-color: #efefef;
 	padding: 20px 0px 10px 0px;
-	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 11px;
+}
+
+.themecol {
+	color: $rosegold;
 }
 
 .articles-single {
@@ -42,13 +53,16 @@ footer {
 		}
 		h1 {
 			font-size: 42px;
-			font-family: 'Meddon';
+			font-family: 'Heebo', 'Open Sans', sans-serif;
 			margin-bottom:10px;
+		}
+		h2, h3 {
+			font-weight: 600;
 		}
 		.category {
 			font-weight: bold;
-			font-family: 'Heebo', 'Open Sans', sans-serif;
-			font-size: 12px;
+			font-family:'Open Sans', sans-serif;
+			font-size: 14px;
 			text-transform: uppercase;
 			padding: 20px 0px 0px 0px;
 		}
