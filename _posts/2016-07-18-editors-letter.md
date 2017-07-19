@@ -9,7 +9,8 @@ category: from the editor
 ---
 
 <figure>
-	<img src="img/articles/luxury-life.jpeg" />
+	<img src="/img/articles/luxury-life.jpeg" />
+	<figcaption>This is the caption. Photo by Name</figcaption>
 </figure>
 
 TOC Cabal created Silk + Tea as a literary thought-space to give its readers a holistic understanding of the importance of preserving human values under all conditions. To successfully preserve our human values, we need to express an interest in our human interactions throughout our daily living. If we are not able to teach and share our knowledge or skills with everyone around us, we do not have the potential to affect change within our families, our communities, or our societies.
