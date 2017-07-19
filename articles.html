@@ -2,7 +2,30 @@
 layout: default
 ---
 
-{% for post in site.posts %}	
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong></small></p>			
-{% endfor %}
+<div class="articles-home">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="silk-and-tea-header">
+					<h1>Silk + Tea</h1>
+					<p>a thread for humankind</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row editions">
+			{% for post in site.posts %}
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<h3 class="articles-home-title">{{ post.title }}</h3>
+				<p>{{ post.category }}</p>
+				<p>{{ post.short | truncatewords:15 }} <a href="{{ post.url }}">read more</a></p>
+				<p><small>{{ post.date | date: "%B %e, %Y" }}</small></p>
+			</div>
+			{% endfor %}
+		</div>
+
+
+	</div>
+</div>

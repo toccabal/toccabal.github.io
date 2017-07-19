@@ -18,7 +18,15 @@
 @import url('https://fonts.googleapis.com/css?family=Meddon');
 
 
+// Silk and Tea Brand
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Chonburi|Elsie|Jomhuria|Simonetta|Yeseva+One');
+
+// Colours
 $rosegold: #b76e79;
+$red: #FE424D;
+$turquoise: #3DDAD7;
+$navy: #022d41;
+$golden: #D1A827;
 
 body {
 	font-family: 'PT Serif', serif;
@@ -30,23 +38,73 @@ h1, h2, h3,  {
 	font-family: 'Open Sans', sans-serif;
 }
 
+a {
+	color: $red;
+}
+
+.navbar-default {
+	background-color: $turquoise;
+	border: none;
+	.navbar-nav>li>a {
+		color: #fff;
+	}
+}
+
+.navbar-brand>img {
+	width: 25px;
+}
+
 footer {
 	position: relative;
 	bottom: 0px;
 	width: 100%;
-	background-color: #efefef;
+	background-color: #f8f8f8;
 	padding: 20px 0px 10px 0px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 11px;
+	font-size: 12px;
+	text-align: center;
 }
 
 .themecol {
 	color: $rosegold;
 }
 
+.articles {
+	.category {
+		font-weight: bold;
+		font-family:'Open Sans', sans-serif;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding: 20px 0px 0px 0px;
+	}
+}
+
+.articles-home {
+	margin-bottom: 30px;
+	.silk-and-tea-header {
+		h1 {
+			font-family: 'Abril Fatface', serif;
+			//font-family: 'Chonburi', serif;
+			//font-family: 'Elsie', serif;
+			//font-family: 'Jomhuri', serif;
+			//font-family: 'Yeseva One', serif;
+			font-size: 65px;
+			text-transform: uppercase;
+		}
+		p {font-family:'Open Sans', sans-serif; font-size: 26px;}
+		text-align: center;
+	}
+	.editions {
+		margin: 30px 0px;
+		.articles-home-title {font-family: 'Open Sans', sans-serif;font-weight:bold;}
+	}
+}
+
+
 .articles-single {
 	.articles-head {
+		text-align: center;
 		margin-top: -20px;
 		img {
 			width: 100%;
