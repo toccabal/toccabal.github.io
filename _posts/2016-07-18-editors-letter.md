@@ -6,6 +6,7 @@ short: |
   Healthy human-to-human interaction is a tradition that should be preserved amidst the lack of human understanding of the processes that govern transformation
 image: name.jpg
 category: from the editor
+featured: true
 ---
 
 <figure>

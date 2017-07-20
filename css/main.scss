@@ -50,6 +50,20 @@ a {
 	}
 }
 
+.navbar-nav {
+	float:right;
+	font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-brand p.toccabal {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
 .navbar-brand>img {
 	width: 25px;
 }
@@ -58,7 +72,8 @@ footer {
 	position: relative;
 	bottom: 0px;
 	width: 100%;
-	background-color: #f8f8f8;
+	background-color: $turquoise;
+	color: #fff;
 	padding: 20px 0px 10px 0px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -67,7 +82,19 @@ footer {
 }
 
 .themecol {
-	color: $rosegold;
+	color: $red;
+}
+
+.home-toccabal-intro {
+	text-align: center;
+	background-color: #f8f8f8;
+	color: #333;
+	padding: 20px 0;
+	h1 {
+		font-family: 'Abril Fatface', serif;
+		font-size: 65px;
+		text-transform: uppercase;
+	}
 }
 
 .articles {
@@ -83,6 +110,15 @@ footer {
 .articles-home {
 	margin-bottom: 30px;
 	.silk-and-tea-header {
+		.magazine {
+			text-align:center;
+		    font-weight: bold;
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 14px;
+		    text-transform: uppercase;
+		    color: $red;
+		    //padding: 20px 0px 0px 0px;
+		}
 		h1 {
 			font-family: 'Abril Fatface', serif;
 			//font-family: 'Chonburi', serif;
@@ -98,6 +134,12 @@ footer {
 	.editions {
 		margin: 30px 0px;
 		.articles-home-title {font-family: 'Open Sans', sans-serif;font-weight:bold;}
+		a.post-title-url {
+			color: #000;
+		}
+		a.post-title-url:hover {
+			color: $red;
+		}
 	}
 }
 
