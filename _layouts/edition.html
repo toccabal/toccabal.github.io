@@ -11,14 +11,11 @@ layout: default
 		<h1>This is a test!!</h1>
 		
 		{% for article in site.articles %}
-		<!--{{% if article.editions == edition.name %}}-->
+		
 		<ul>
-
-			<li><a href="{{ article.url }}">{{ article.title }}</a></li>
-
+		<li><a href="{{ article.url }}">{{ article.title }}</a></li>
 		</ul>
 
-		<!--{% endif %}-->
 		{% endfor %}
 
 
