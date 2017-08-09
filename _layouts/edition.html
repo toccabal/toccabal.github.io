@@ -3,10 +3,25 @@ layout: default
 ---
 
 <div class="edition">
-  <h2><img src="{{ page.image_path }}" alt="page.title" />{{ page.title }}</h2>
 
-  <div class="blog-post spacing">
-    {{ content }}
-  </div>
+		<img src="{{ page.image }}" style="width:150px;" />
+		<h2>{{ page.title }}</h2>
+		<p>{{ page.volume }}</p>
+
+		<h1>This is a test!!</h1>
+		
+		{% for article in site.articles %}
+		<!--{{% if article.editions == edition.name %}}-->
+		<ul>
+
+			<li><a href="{{ article.url }}">{{ article.title }}</a></li>
+
+		</ul>
+
+		<!--{% endif %}-->
+		{% endfor %}
+
+
+<!-- add link to return to editions -->
 
 </div>

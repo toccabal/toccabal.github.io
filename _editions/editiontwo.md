@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: edition
 name: editiontwo
 title: Character
 volume: Edition Two
