@@ -16,14 +16,35 @@ layout: default
 		</div>
 
 		<div class="row editions">
-			{% for post in site.posts %}
+
+		<!-- {% for edition in site.editions %}
+			  <div class="edition">
+			    <h2><a href="{{ edition.url }}">{{ edition.title }}</a></h2>
+			  </div>
+			{% endfor %} -->
+
+			{% for edition in site.editions %}
+			  <div class="edition">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<a href="{{ edition.url }}"><img class="editioncover-home" src="{{ edition.image }}" /></a>
+					<h2><a href="{{ edition.url }}">{{ edition.title }}</a></h2>
+					<p><small>{{ edition.volume }}</small></p>
+					<p>{{ edition.description }}</p>
+				</div>
+			  </div>
+			{% endfor %}
+
+
+
+			<!--{% for post in site.posts %}
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				<h3 class="articles-home-title"><a class="post-title-url" href="{{ post.url }}">{{ post.title }}</a></h3>
 				<p>{{ post.category }}</p>
 				<p>{{ post.short | truncatewords:15 }} <a href="{{ post.url }}">read more</a></p>
 				<p><small>{{ post.date | date: "%B %e, %Y" }}</small></p>
 			</div>
-			{% endfor %}
+			{% endfor %}-->
+
 		</div>
 
 	</div>
@@ -34,21 +55,6 @@ layout: default
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<h1>Who is TOCCABAL?</h1>
-			<p>start</p>
-			
-
-			{% for edition in site.editions %}
-			  <div class="edition">
-			    <h2><img src="{{ edition.image_path }}" alt="{{ edition.title }}">{{ edition.title }}</a></h2>
-			    {{ edition.content }}
-			  </div>
-			{% endfor %}
-
-
-
-
-			<p>end</p>
-
 		</div>
 	</div>
 

@@ -28,6 +28,8 @@ collections:
   editions:
     output: true
     permalink: /editions/:path/
+  articles:
+    output: true
 
 defaults:
   -
