@@ -8,13 +8,17 @@ layout: default
 		<h2>{{ page.title }}</h2>
 		<p>{{ page.volume }}</p>
 
-		<h1>This is a test!!</h1>
-		
 		{% for article in site.articles %}
+
+		{% for edition in article.editions %}
+        {% if edition.name == page.name %}
 		
-		<ul>
-		<li><a href="{{ article.url }}">{{ article.title }}</a></li>
-		</ul>
+			<ul>
+				<li><a href="{{ article.url }}">{{ article.title }}</a></li>
+			</ul>
+
+		{% endif %}
+		{% endfor %}
 
 		{% endfor %}
 
