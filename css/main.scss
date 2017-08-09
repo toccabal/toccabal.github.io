@@ -17,6 +17,8 @@
 // Handwriting
 @import url('https://fonts.googleapis.com/css?family=Meddon');
 
+// TOCCABAL Brand
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|EB+Garamond|Libre+Baskerville|Prata|Scheherazade:700|Vollkorn');
 
 // Silk and Tea Brand
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Chonburi|Elsie|Jomhuria|Simonetta|Yeseva+One');
@@ -59,9 +61,13 @@ a {
 
 .navbar-brand p.toccabal {
 	color: #fff;
-	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-family: 'Abhaya Libre', sans-serif;
 	font-weight: bold;
+	.toc {
+		font-size: 18px;
+		font-weight: normal;
+	}
 }
 
 .navbar-brand>img {

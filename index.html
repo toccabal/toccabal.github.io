@@ -34,8 +34,25 @@ layout: default
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<h1>Who is TOCCABAL?</h1>
+			<p>start</p>
+			
+
+			{% for edition in site.editions %}
+			  <div class="edition">
+			    <h2><img src="{{ edition.image_path }}" alt="{{ edition.title }}">{{ edition.title }}</a></h2>
+			    {{ edition.content }}
+			  </div>
+			{% endfor %}
+
+
+
+
+			<p>end</p>
+
 		</div>
 	</div>
 
 </div>
+
+   
 
