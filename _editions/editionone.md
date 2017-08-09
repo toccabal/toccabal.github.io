@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: edition
 name: editionone
 title: Innovation
 volume: Edition One

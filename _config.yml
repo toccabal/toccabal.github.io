@@ -25,11 +25,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #github_username:  jekyll
 
 collections:
+  articles:
+    output: true
+    permalink: /articles/:path/
   editions:
     output: true
     permalink: /editions/:path/
-  articles:
-    output: true
 
 defaults:
   -
